@@ -29,5 +29,6 @@ export class TrackingFormComponent implements OnInit {
     const res = await this.http.getData(this.shipment);
     console.log(res);
     this.dataList = res;
+    this.trackingForm.reset();
   }
 }
